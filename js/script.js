@@ -30,4 +30,9 @@ $(document).ready(function(){
 		var user = $('#login_usuario').val();
 		var psw = $('#login_psw').val();
 	});
+	
+	function comprobarRegistro() {
+		var usuario = $('#usuarioInput').val();
+		
+    }
 });
