@@ -1,5 +1,6 @@
 .jumbotron{
-    background-image: url(../img/red.jpeg); background-size: 100% 100%;
+    background-image: url(../img/red.jpeg);
+    background-size: 100% 100%;
     color: #ffffff;
 }
 
@@ -14,18 +15,39 @@
 }
 
 .img-background{
-    background-image: url(../img/img-background.jpeg); background-size: 100% 100%;
-    position: absolute;
+    background-image: url(../img/img-background.jpeg);
+    background-size: 100% 100%;
+    position: relative;
     z-index: 1;
-    width: 100px;
-    height: 100px;
 }
 
 .registro{
-    padding: 80px;
-    margin: 5px;
-    position: absolute;
+    border: 1px solid #1d760d;
+    background: red;
+    position: relative;
     z-index: 2;
-    width: 100px;
-    height: 100px;
+    width: 800px;
+    height: 500px;
+    padding: 40px;
+}
+
+.title-registro {
+    border: 1px solid #1d760d;
+    border-radius: 5px;
+    background-color: #28a74524;
+}
+.mapa{
+    padding: 10px;
+}
+
+.info-instalaciones{
+    padding: 10px;
+    width: 80px;
+    height: 200px;
+    margin-top: 130px;
+
+}
+.icons{
+    color: #1fce6d;
+    font-size: 32px;
 }
