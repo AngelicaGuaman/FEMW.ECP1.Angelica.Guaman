@@ -1,30 +1,34 @@
-<form>
-	<div class="form-group">
-		<label for="usuarioInput">Usuario</label>
-		<input type="email" class="form-control" id="usuarioInput" aria-describedby="emailHelp" placeholder="Enter email">
-		<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+<div class="img-background">
+	<div class="border registro">
+		Registro de usuario
+		<form>
+			<div class="form-group">
+				<label for="usuarioInput">Usuario</label>
+				<input type="text" class="form-control" id="usuarioInput" placeholder="Enter user">
+			</div>
+
+			<div class="form-group">
+				<label for="correoInput">Correo</label>
+				<input type="email" class="form-control" id="correoInput" aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+
+			<div class="form-group">
+				<label for="claveInput">Clave</label>
+				<input type="password" class="form-control" id="claveInput" placeholder="Contraseña">
+			</div>
+
+			<div class="form-group">
+				<label for="repiteClaveInput">Repite la clave</label>
+				<input type="password" class="form-control" id="repiteClaveInput" placeholder="Repite contraseña">
+			</div>
+
+			<div class="form-group">
+				<label for="fechaInput">Fecha de nacimiento</label>
+				<input type="date" class="form-control" id="fechaInput" placeholder="Fecha nacimiento">
+			</div>
+
+			<button type="submit" class="btn btn-primary">Crear usuario</button>
+		</form>
 	</div>
-  
-	<div class="form-group">
-		<label for="correoInput">Correo</label>
-		<input type="email" class="form-control" id="correoInput" aria-describedby="emailHelp" placeholder="Enter email">
-		<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-	</div>
-  
-	<div class="form-group">
-		<label for="claveInput">Clave</label>
-		<input type="password" class="form-control" id="claveInput" placeholder="Password">
-	</div>
-  
-	<div class="form-group">
-		<label for="repiteClaveInput">Repite la clave</label>
-		<input type="password" class="form-control" id="repiteClaveInput" placeholder="Password">
-	</div>
-	
-	<div class="form-group">
-		<label for="repiteClaveInput">Fecha de nacimiento</label>
-		<input type="password" class="form-control" id="repiteClaveInput" placeholder="Password">
-	</div>
-  
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</div>

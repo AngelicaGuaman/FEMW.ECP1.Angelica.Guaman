@@ -1,5 +1,11 @@
 $(document).ready(function(){
-	
+
+    $('#panel').load('./panels/panelInicio.html');
+
+    $('#panelInicio').click(function(){
+        $('#panel').load('./panels/panelInicio.html');
+    });
+
 	$('#panelServicios').click(function(){
 		$('#panel').load('./panels/panelServicios.html');
 	});
@@ -19,7 +25,6 @@ $(document).ready(function(){
 	$('#panelLogin').click(function(){
 		$('#panel').load('./panels/panelLogin.html');
 	});
-	
 	
 	$('#btnLogin').on("click", function(){
 		var user = $('#login_usuario').val();

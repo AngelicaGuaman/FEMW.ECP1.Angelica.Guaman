@@ -1,0 +1,31 @@
+.jumbotron{
+    background-image: url(../img/red.jpeg); background-size: 100% 100%;
+    color: #ffffff;
+}
+
+.jumbotron img{
+    opacity: 0.5;
+}
+
+.border {
+    border: 1px solid #1d760d;
+    border-radius: 5px;
+    background-color: #28a74524;
+}
+
+.img-background{
+    background-image: url(../img/img-background.jpeg); background-size: 100% 100%;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+}
+
+.registro{
+    padding: 80px;
+    margin: 5px;
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+}
