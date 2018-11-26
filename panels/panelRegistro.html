@@ -1,34 +1,36 @@
 <div class="img-background">
-	<div class="border registro">
-		<div class="title-registro">Registro de usuario
+	<div>
+		<div class="title-registro">
+			<h3>Nuevo Registro</h3>
 			<form>
 				<div class="form-group">
-					<label for="usuarioInput">Usuario</label>
-					<input type="text" class="form-control" id="usuarioInput" placeholder="Enter user">
+					<label for="registroUsuario">Usuario</label>
+					<input type="text" class="form-control" id="registroUsuario" placeholder="Introduce el usuario">
 				</div>
 
 				<div class="form-group">
-					<label for="correoInput">Correo</label>
-					<input type="email" class="form-control" id="correoInput" aria-describedby="emailHelp" placeholder="Enter email">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					<label for="registroCorreo">Correo</label>
+					<input type="email" class="form-control" id="registroCorreo" placeholder="example@example.com">
 				</div>
 
 				<div class="form-group">
-					<label for="claveInput">Clave</label>
-					<input type="password" class="form-control" id="claveInput" placeholder="Contraseña">
+					<label for="registroPsw">Clave</label>
+					<input type="password" class="form-control" id="registroPsw" placeholder="Introduce la contraseña">
 				</div>
 
 				<div class="form-group">
-					<label for="repiteClaveInput">Repite la clave</label>
-					<input type="password" class="form-control" id="repiteClaveInput" placeholder="Repite contraseña">
+					<label for="resgistroPsw2">Repite la clave</label>
+					<input type="password" class="form-control" id="resgistroPsw2" placeholder="Repite la contraseña">
 				</div>
 
 				<div class="form-group">
-					<label for="fechaInput">Fecha de nacimiento</label>
-					<input type="date" class="form-control" id="fechaInput" placeholder="Fecha nacimiento">
+					<label for="registroFecha">Fecha de nacimiento</label>
+					<input type="date" class="form-control" id="registroFecha" placeholder="Fecha de nacimiento">
 				</div>
 
-				<button type="submit" class="btn btn-primary">Crear usuario</button>
+				<div class="text-center">
+					<button type="submit" id="btnRegistro" class="btn btn-primary">Crear usuario</button>
+				</div>
 			</form>
 		</div>
 	</div>
