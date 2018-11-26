@@ -1,3 +1,7 @@
+body{
+
+}
+
 .jumbotron{
     background-image: url(../img/red.jpeg);
     background-size: 100% 100%;
@@ -12,6 +16,7 @@
     border: 1px solid #1d760d;
     border-radius: 5px;
     background-color: #28a74524;
+    padding: 20px;
 }
 
 .img-background{
@@ -50,4 +55,17 @@
 .icons{
     color: #1fce6d;
     font-size: 32px;
+    float: left;
+}
+
+.title-servicios{
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.wrapper-servicios{
+    width: 100%;
+    height: 300px;
+    margin: 70px 0px 0px 0px;
+
 }
