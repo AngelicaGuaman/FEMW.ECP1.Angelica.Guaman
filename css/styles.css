@@ -78,5 +78,5 @@
     display: none !important;
 }
 .error{
-    border: 1px solid #1d760d;
+    border: 1px solid red;
 }
