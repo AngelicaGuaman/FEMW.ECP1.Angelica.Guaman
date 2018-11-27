@@ -8,6 +8,10 @@ $(document).ready(function () {
         $('#panelReserva').removeClass('invisible');
     }
 
+    $('#logo').click(function () {
+        $('#panel').load('./panels/panelInicio.html');
+    });
+
     $('#panelInicio').click(function () {
         $('#panel').load('./panels/panelInicio.html');
     });
@@ -34,6 +38,10 @@ $(document).ready(function () {
 
     $(document).on('click', '#btnRegistro', function () {
         var error = comprobarRegistro();
+
+        if(error){
+            $('#info').removeClass('invisible');
+        }
     });
 
     $(document).on('click', '#panelLogout', function () {
@@ -64,8 +72,11 @@ $(document).ready(function () {
                 },
                 error: function (e) {
                     console.log("Error");
+                    $('#info').removeClass(invisible);
                 }
             });
+        } else {
+            $('#info').removeClass('invisible');
         }
     });
 
@@ -76,17 +87,17 @@ $(document).ready(function () {
         var psw = $("#loginPsw");
 
         if (user.val() === '') {
-            user.addClass('error');
+            user.addClass('border-danger');
             check = false;
         } else {
-            user.removeClass('error');
+            user.removeClass('border-danger');
         }
 
         if (psw.val() === '') {
-            psw.addClass('error');
+            psw.addClass('border-danger');
             check = false;
         } else {
-            psw.removeClass('error');
+            psw.removeClass('border-danger');
         }
 
         return check;
@@ -101,31 +112,31 @@ $(document).ready(function () {
         var psw2 = $('#registroPsw2');
 
         if(user.val() === ''){
-            user.addClass('error');
+            user.addClass('border-danger');
             error = true;
         } else {
-            user.removeClass('error');
+            user.removeClass('border-danger');
         }
 
         if(email.val() === ''){
-            email.addClass('error');
+            email.addClass('border-danger');
             error = true;
         } else {
-            email.removeClass('error');
+            email.removeClass('border-danger');
         }
 
         if(psw.val() === ''){
-            psw.addClass('error');
+            psw.addClass('border-danger');
             error = true;
         } else {
-            psw.removeClass('error');
+            psw.removeClass('border-danger');
         }
 
         if(psw2.val() === ''){
-            psw2.addClass('error');
+            psw2.addClass('border-danger');
             error = true;
         } else {
-            psw2.removeClass('error');
+            psw2.removeClass('border-danger');
         }
 
         return error;
